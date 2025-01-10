@@ -13,12 +13,12 @@ class TeleportData : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        originalLayer = spriteRenderer.sortingLayerID;
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     void Start()
     {
+        originalLayer = 0;
         spriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
     }
 

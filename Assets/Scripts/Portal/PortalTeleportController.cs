@@ -4,7 +4,7 @@ public class PortalTeleportController : MonoBehaviour
 {
     [SerializeField] private float _suctionVelocity = 10f; // Kecepatan benda saat masuk/keluar portal supaya tidak sengaja clone 2x
     private Collider2D _thisCollider; // Collider portal ini
-    [HideInInspector] public PortalTeleportController otherPortal;
+    public PortalTeleportController otherPortal;
     public PortalTeleportController OtherPortal {
         get {return otherPortal; }
         set {
@@ -17,7 +17,7 @@ public class PortalTeleportController : MonoBehaviour
     [HideInInspector] public LayerMask otherPortalMask; // Layer mask dari portal lain
     private Transform _otherPortalTransform; // Transform portal lain
     private Collider2D _otherPortalCollider; // Collider portal lain
-    [HideInInspector] public Vector2 inVector; // Vektor arah masuk keluar
+    public Vector2 inVector; // Vektor arah masuk keluar
     void Start()
     {
         _thisCollider = GetComponent<Collider2D>();
@@ -28,7 +28,6 @@ public class PortalTeleportController : MonoBehaviour
         }
 
         UpdateInVector();
-        Debug.Log(name + " inVector: " + inVector.x + " " + inVector.y);
     }
     public void SetColliderActive(bool active)
     {
@@ -53,11 +52,12 @@ public class PortalTeleportController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Kalau portal lainnya tidak ada atau sedang tidak aktif, jangan lakukan teleportasi
+        if (otherPortal == null) return;
+
         // Update inVector supaya tidak salah arah
         UpdateInVector();
-
-        // Kalau portal lainnya tidak ada atau sedang tidak aktif, jangan lakukan teleportasi
-        if (otherPortal == null || _otherPortalCollider.isTrigger == false) return;
+        otherPortal.UpdateInVector();
 
         // Kalau objectnya bukan object yang bisa diteleportasikan, jangan lakukan teleportasi
         // Kalau sedang di portal, jangan lakukan teleportasi lagi
@@ -65,7 +65,6 @@ public class PortalTeleportController : MonoBehaviour
         if (otherData == null || otherData.isTeleporting || otherData.clone != null) return;
         // Tandai lagi di portal, supaya clone di portal lain tidak membuat clone lagi
         otherData.isTeleporting = true;
-        other.excludeLayers |= 1 << LayerMask.NameToLayer("Ground");
 
         // Copy gameObjectnya ke portal lain
         otherData.clone = CloneHelper.Clone(other.gameObject);
@@ -128,6 +127,9 @@ public class PortalTeleportController : MonoBehaviour
         cloneData.teleportDirection = otherPortal.inVector;
         otherData.suctionVelocity = _suctionVelocity;
         cloneData.suctionVelocity = _suctionVelocity;
+
+        other.excludeLayers |= 1 << LayerMask.NameToLayer("Ground"); // Jadikan bisa tembus tanah
+        other.excludeLayers |= 1 << LayerMask.NameToLayer("Unstickable"); // Jadikan bisa tembus tanah yang unstickable
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -136,7 +138,7 @@ public class PortalTeleportController : MonoBehaviour
 
         // Sudah keluar dari portal
         otherData.isTeleporting = false;
-        other.excludeLayers = 0;
+        other.excludeLayers = 0; // Kembali tidak bisa tembus tanah
 
         if (otherData.clone == null) return; // Kalo nggak ada clone, sebaiknya jangan dihancurkan, nanti hilang total
         // Kalau arah vektor keluar searah dengan arah vektor masuk, berarti berhasil masuk portal dan pindah
