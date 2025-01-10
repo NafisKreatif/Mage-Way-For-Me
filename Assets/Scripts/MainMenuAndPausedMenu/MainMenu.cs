@@ -16,6 +16,10 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Player Has quit the game");
     }
 
+    public void BackToMainMenu() {
+        SceneManager.LoadScene(0); 
+    }
+
 
     // Update is called once per frame
     void Update()
