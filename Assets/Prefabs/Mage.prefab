@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownDuration: 0.5
-  portalLength: 20
+  portalLength: 4
   portalWidth: 2
   _projectilePrefab: {fileID: 3351329691042210146, guid: aac7ec75be21bb147919fbe88846c663, type: 3}
   _portalPrefabs:
@@ -249,8 +249,6 @@ GameObject:
   - component: {fileID: 124771289940957663}
   - component: {fileID: 8211046059806104012}
   - component: {fileID: 7955108612550204184}
-  - component: {fileID: 4542887681402688618}
-  - component: {fileID: 5153244869569117036}
   m_Layer: 3
   m_Name: Mage
   m_TagString: Player
@@ -273,7 +271,6 @@ Transform:
   m_Children:
   - {fileID: 368498779034689106}
   - {fileID: 165914790486426856}
-  - {fileID: 7958231006755412054}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4557603660047669719
