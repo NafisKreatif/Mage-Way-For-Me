@@ -1,8 +1,12 @@
 # Mage-Way-For-Me
 Tugas Gabungan Prog Prod Design Party 11. Game ini berupa prototype.
 
+## How to Play
+- Click left mouse button or right mouse button to shoot portals.
+- Press shift to switch between sets of portals.
+
 ## Tujuan
-Membuat portal tapi versi 2D. Prototype ini dibuat sebagai tugas gabungan untuk Programmer, Game Producer, dan Game Designer pada GIM Apprenticeship 2024/2025, utamanya bagi para programmer.
+Membuat portal tapi versi 2D dengan dua pasang portal. Prototype ini dibuat sebagai tugas gabungan untuk Programmer, Game Producer, dan Game Designer pada GIM Apprenticeship 2024/2025, utamanya bagi para programmer.
 
 ## Cara menginstal dan menjalankan prototype
 Clone repository ini ke perangkat Anda. Instal Unity Editor versi 6000.0.26f1. Buka Unity Hub. Add project from disk. Pilih folder hasil clone repository ini. Buka dengan Unity Editor versi 6000.0.26f1.
