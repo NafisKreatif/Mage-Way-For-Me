@@ -732,29 +732,6 @@ Transform:
 --- !u!1 &2516205154316930395
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7846743146067119933}
-  - component: {fileID: 3586734535944068344}
-  - component: {fileID: 6622758519779723695}
-  - component: {fileID: 7551312682909057693}
-  m_Layer: 0
-  m_Name: Mask
-  m_TagString: Mask
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7846743146067119933
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2516205154316930395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2, y: 0, z: 0}
@@ -1761,9 +1738,8 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &6138423388369638982
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6867931392395435303, guid: 5e54c984303970d47a35d7eb3c673f69, type: 3}
+  m_PrefabInstance: {fileID: 7568985195247030016}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6741804477675820681}
   serializedVersion: 2
@@ -2134,24 +2110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &7502478477976928792
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2142173831261755060}
-  - component: {fileID: 7654595401744944747}
-  - component: {fileID: 402648992151405072}
-  m_Layer: 7
-  m_Name: Kepala
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2142173831261755060
-Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
