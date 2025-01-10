@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 5754573975171058849}
   - component: {fileID: 2734315324252658166}
   - component: {fileID: 1644192527330792132}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Mask
   m_TagString: Mask
   m_Icon: {fileID: 0}
@@ -456,12 +456,12 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: a1c11725dd7e3422d9f5bf60701f02dd, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_MaskAlphaCutoff: 0.2
-  m_FrontSortingLayerID: -919173589
-  m_BackSortingLayerID: -919173589
-  m_FrontSortingLayer: 2
-  m_BackSortingLayer: 2
+  m_FrontSortingLayerID: -515731607
+  m_BackSortingLayerID: -515731607
+  m_FrontSortingLayer: 4
+  m_BackSortingLayer: 4
   m_FrontSortingOrder: 1
   m_BackSortingOrder: -1
   m_IsCustomRangeActive: 1
@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 5327527287664395318}
   - component: {fileID: 4205169810163072716}
   - component: {fileID: 8957280867089087529}
+  - component: {fileID: 7560043189819519475}
   m_Layer: 7
   m_Name: Portal 4
   m_TagString: Untagged
@@ -554,7 +555,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4535248044140028749}
@@ -662,7 +663,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.8}
+  m_Size: {x: 0.6, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &8957280867089087529
 MonoBehaviour:
@@ -682,3 +683,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   inVector: {x: 0, y: 0}
+--- !u!114 &7560043189819519475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156102008789190675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d083f150713047479b78c40fd50eb81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

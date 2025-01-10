@@ -4,7 +4,8 @@ using UnityEngine.Events;
 class FinishLevelController : MonoBehaviour
 {
     public UnityEvent WinEvent;
-    void Start() {
+    void Start()
+    {
         if (WinEvent == null) WinEvent = new UnityEvent();
     }
     void OnTriggerEnter2D(Collider2D other)

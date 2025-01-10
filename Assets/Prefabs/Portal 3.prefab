@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 861788687639415036}
   - component: {fileID: 6969915872045372902}
   - component: {fileID: 7876243577395182679}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mask
   m_TagString: Mask
   m_Icon: {fileID: 0}
@@ -78,12 +78,12 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: a1c11725dd7e3422d9f5bf60701f02dd, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_MaskAlphaCutoff: 0.2
-  m_FrontSortingLayerID: -120935195
-  m_BackSortingLayerID: -120935195
-  m_FrontSortingLayer: 1
-  m_BackSortingLayer: 1
+  m_FrontSortingLayerID: 702725969
+  m_BackSortingLayerID: 702725969
+  m_FrontSortingLayer: 3
+  m_BackSortingLayer: 3
   m_FrontSortingOrder: 1
   m_BackSortingOrder: -1
   m_IsCustomRangeActive: 1
@@ -159,7 +159,8 @@ GameObject:
   - component: {fileID: 7247527402151307367}
   - component: {fileID: 18775690007154092}
   - component: {fileID: 4757188434582351997}
-  m_Layer: 0
+  - component: {fileID: 9085147655991626410}
+  m_Layer: 7
   m_Name: Portal 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +177,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8501738765063056993}
@@ -284,7 +285,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.8}
+  m_Size: {x: 0.6, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &4757188434582351997
 MonoBehaviour:
@@ -304,6 +305,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   inVector: {x: 0, y: 0}
+--- !u!114 &9085147655991626410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3071718910345714213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d083f150713047479b78c40fd50eb81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6419816433751155020
 GameObject:
   m_ObjectHideFlags: 0
