@@ -36,7 +36,6 @@ class SectionSwitchController : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         if (!canSwitch && _toggleOnExit)
         {
-            Debug.Log("Toggled on Exit!");
             canSwitch = true;
             _toggleOnExit = false;
         }
@@ -51,7 +50,6 @@ class SectionSwitchController : MonoBehaviour
         yield return null;
         if (!canSwitch && !_toggleOnExit)
         {
-            Debug.Log("Toggled normally!");
             canSwitch = true;
         }
     }

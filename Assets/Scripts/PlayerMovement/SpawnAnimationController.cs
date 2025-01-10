@@ -20,7 +20,6 @@ public class SpawnAnimationController : MonoBehaviour
         // Kalo animasi sudah selesai, hentikan animatornya
         if (spawnAnimator.enabled == true && !AnimatorIsPlaying())
         {
-            Debug.Log("Animasi selesai!");
             spawnAnimator.enabled = false;
         }
     }
