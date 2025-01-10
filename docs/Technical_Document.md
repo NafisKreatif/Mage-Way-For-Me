@@ -15,6 +15,15 @@ In this game system, the player is the central entity, controlled through a Play
 
 ### Features
 
+- [Portal Teleportation](mechanics/Portal_Teleportation.md)
+- [Portal Gun](mechanics/Portal_Gun.md)
+- [Settings Menu](mechanics/Settings.md)
+- [Interactable Toggle](mechanics/Interactable_Toggle.md)
+- [Moving Object](mechanics/Moving_Object.md)
+- [Obstacle Object](mechanics/Obstacle.md)
+- [Win Condition](mechanics/Win_Trigger.md)
+- [Section Switcher](mechanics/Section_Switcher.md)
+
 ## Technical Difficulties
 
 ### Challenge 1
